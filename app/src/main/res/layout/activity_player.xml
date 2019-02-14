@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smarttools.constituicaoemaudio.PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_player"
+        android:orientation="vertical">
+
+        <com.example.jean.jcplayer.view.JcPlayerView
+            android:id="@+id/jcPlayer"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_player"
+            app:next_icon_color="#eeeeee"
+            app:previous_icon_color="#eeeeee"
+            app:play_icon_color="#eeeeee"
+            app:pause_icon_color="#eeeeee"
+            app:progress_color="#eeeeee"
+            app:random_icon_color="#eeeeee"
+            app:repeat_one_icon_color="#eeeeee"
+            app:repeat_icon_color="#eeeeee"
+            app:seek_bar_color="#eeeeee"
+            app:text_audio_current_duration_color="@color/colorGray"
+            app:text_audio_duration_color="@color/colorGray"
+            app:text_audio_title_color="@color/colorGray"
+            app:show_repeat_button="false"
+            app:show_random_button="false"/>
+
+        <CheckBox
+            android:id="@+id/checkManterAudio"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:text="Manter áudio ativo ao sair"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
